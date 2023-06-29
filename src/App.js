@@ -1,19 +1,16 @@
 import React from "react";
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 const App =()=>{
   // Array of object for dummy expense
-  const expenses=[
-    {id:'e1',date:new Date(2020, 11, 12), title:'Car Insurance', amount:237.98 },
-    {id:'e2',date:new Date(2021, 8, 12), title:'Home Expenses', amount:237.98 },
-    {id:'e3',date:new Date(2022, 6, 12), title:'Personal Expenses', amount:237.98 },
-    {id:'e4',date:new Date(2023, 2, 12), title:'Flue Expenses', amount:237.98 }
+  const dummy_Expenses=[
+    {id:'e1',date:new Date(2020, 11, 15), title:'Car Insurance', amount:876.98 },
+    {id:'e2',date:new Date(2021, 8, 1), title:'Home Expenses', amount:453.98 },
+    {id:'e3',date:new Date(2022, 6, 22), title:'Personal Expenses', amount:237.98 },
+    {id:'e4',date:new Date(2023, 2, 11), title:'Flue Expenses', amount:88.98 }
   ]
   return <div> <h2>Hello World</h2>
-  <ExpenseItem date={expenses[0].date} title={expenses[0].title} amount={expenses[0].amount} />
-  <ExpenseItem date={expenses[0].date} title={expenses[0].title} amount={expenses[0].amount} />
-  <ExpenseItem date={expenses[0].date} title={expenses[0].title} amount={expenses[0].amount} />
-  <ExpenseItem date={expenses[0].date} title={expenses[0].title} amount={expenses[0].amount} />
+ <Expenses expenses={dummy_Expenses} />
   </div>
 }
 
