@@ -4,7 +4,6 @@ import './ExpenseFilter.css';
 const ExpenseFilter =(props)=>{
     const dropDownHandler =(event)=>{
 props.onFilter(event.target.value);
-console.log(event.target.value)
     }
     return <div className='expenses-filter'>
           <div className='expenses-filter__control'>
