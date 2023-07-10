@@ -12,7 +12,6 @@ import NewExpense from "./components/NewExpenses/NewExpense";
   ]
   const App =()=>{
     
-  
   const [expense, setExpense] = useState(dummy_Expenses);
 const dataFromUser =(userInput)=>{
 setExpense((preValue=>{
